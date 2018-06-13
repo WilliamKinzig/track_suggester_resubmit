@@ -4,37 +4,21 @@ $(document).ready(function() {
 
     event.preventDefault();
 
-    var option1 = $("input:radio[name=quesGroup01]:checked").val();
-    var option2 = $("input:radio[name=quesGroup02]:checked").val();
-    var option3 = $("input:radio[name=quesGroup03]:checked").val();
+    var option1 = parseInt($("input:radio[name=quesGroup01]:checked").val());
+    var option2 = parseInt($("input:radio[name=quesGroup02]:checked").val());
+    var option3 = parseInt($("input:radio[name=quesGroup03]:checked").val());
+
+    var total = option1 + option2 + option3;
+
+    var bob = 0;
+    
+    if(total === 7){
+      bob = 1;
+    }else if(total === 6){
+      bob = 2;
+    }else {
+      bob = 3;
+    }
 
   });
 });
-
-//var age = parseInt($("input#age").val());
-
-// if (option === 1) {
-//   var course = "CSS";
-//   $("#fill").empty().append(course);
-//   $("#recommendation").show();
-// }else if (option === 2) {
-//   var course = "c#";
-//   //$("#fill").empty().append(course);
-//   $("#recommendation").show();
-// }else if (option === 3) {
-//   var course = "Java";
-//   //$("#fill").empty().append(course);
-//   $("#recommendation").show();
-// }else if (option === 4) {
-//   var course = "PHP";
-//   //$("#fill").empty().append(course);
-//   $("#recommendation").show();
-// }else (option === 5) {
-//   var course = "RUBY";
-//   //$("#fill").empty().append(course);
-//   $("#recommendation").show();
-// }
-
-// $("button").click(function() {
-//   $("quote").show();
-// });
