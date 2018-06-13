@@ -24,8 +24,7 @@ $(document).ready(function() {
       //$("#fill").empty().append(course);
       $("#recommendation").show();
     }
-
-
+    #quote.show();
     event.preventDefault();
   });
 });
