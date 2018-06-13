@@ -6,11 +6,10 @@
   background-color: light green;
 }
 
-#quote {
+#summary {
   display: none;
   border: 3px;
   border-color: red;
-
 }
 
 .container {
