@@ -14,8 +14,10 @@ $(document).ready(function() {
       //   bob = 1;
       // }else if(total === 6){
       //   bob = 2;
-      // }else {
+      // }else if(totol === 5){
       //   bob = 3;
+      // }else {
+      //   bob = 4;
       // }
 
      $("#summary").show();
