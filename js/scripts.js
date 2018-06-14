@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#button").submit(function(event) {
+  $("#button").click(function(){
     event.preventDefault();
 
       var option1 = parseInt($("input:radio[name=quesGroup01]:checked").val());
@@ -20,6 +20,6 @@ $(document).ready(function() {
       //   bob = 4;
       // }
 
-     $("#summary").show();
+     $(".summary").show();
   });
 });

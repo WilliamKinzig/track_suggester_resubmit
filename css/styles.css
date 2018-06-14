@@ -6,7 +6,7 @@
   background-color: light green;
 }
 
-#summary {
+.summary {
   display: none;
   border: 3px;
   border-color: red;
