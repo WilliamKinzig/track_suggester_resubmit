@@ -10,23 +10,23 @@ $(document).ready(function () {
     var finalScore = 0;
 
     if (total === 0) {
-      finalScore = 1;
-    } else if (total === 6) {
-      finalScore = 2;
-    } else if (total === 5) {
-      finalScore = 3;
+      finalScore = 0;
+    } else if (total === 0) {
+      finalScore = 0;
+    } else if (total === 0) {
+      finalScore = 0;
     } else {
-      finalScore = 4;
+      finalScore = 0;
     }
 
     if (finalScore === 1) {
-      $(".cssReact").show();
+
       showSummary();
     } else if (finalScore === 2) {
-      $(".rubyRails").show();
+
       showSummary();
     } else {
-      $(".cNet").show;
+
       showSummary();
     }
 
@@ -34,6 +34,15 @@ $(document).ready(function () {
 
     function showSummary(){
       $("#summary").show();
+      $(".container2_summaryPics").show();
+    }
+    function showSummary(){
+      $("#summary").show();
+      $(".container2_summaryPics").show();
+    }
+    function showSummary(){
+      $("#summary").show();
+      $(".container2_summaryPics").show();
     }
 
     //showSummary();
