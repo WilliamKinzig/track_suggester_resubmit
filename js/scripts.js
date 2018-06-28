@@ -9,40 +9,42 @@ $(document).ready(function () {
     var total = option1 + option2 + option3;
     var finalScore = 0;
 
-    if (total === 0) {
-      finalScore = 0;
+    showSummaryRuby();
+
+    if (total === 1) {
+      finalScore = 1;
     } else if (total === 0) {
-      finalScore = 0;
+      finalScore = 2;
     } else if (total === 0) {
-      finalScore = 0;
+      finalScore = 3;
     } else {
       finalScore = 0;
     }
 
     if (finalScore === 1) {
-
+      showSummaryRuby();
       showSummary();
     } else if (finalScore === 2) {
-
+      showSummaryReact();
+      showSummary();
+    } else if (finalScore ===3){
+      showSummarySharp();
       showSummary();
     } else {
-
-      showSummary();
+      finalScore == 0;
     }
 
-
-
-    function showSummary(){
+    function showSummaryRuby(){
       $("#summary").show();
-      $(".container2_summaryPics").show();
+      $("#ruby").show();
     }
-    function showSummary(){
+    function showSummaryReact(){
       $("#summary").show();
-      $(".container2_summaryPics").show();
+      $("#react").show();
     }
-    function showSummary(){
+    function showSummarySharp(){
       $("#summary").show();
-      $(".container2_summaryPics").show();
+      $("#sharp").show();
     }
 
     //showSummary();
