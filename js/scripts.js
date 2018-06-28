@@ -13,26 +13,32 @@ $(document).ready(function () {
 
     if (total === 1) {
       finalScore = 1;
-    } else if (total === 0) {
+      showSummaryRuby();
+      showSummary();
+    } else if (total === 2) {
       finalScore = 2;
-    } else if (total === 0) {
+      showSummaryReact();
+      showSummary();
+    } else if (total === 3) {
       finalScore = 3;
+      showSummarySharp();
+      showSummary();
     } else {
       finalScore = 0;
     }
 
-    if (finalScore === 1) {
-      showSummaryRuby();
-      showSummary();
-    } else if (finalScore === 2) {
-      showSummaryReact();
-      showSummary();
-    } else if (finalScore ===3){
-      showSummarySharp();
-      showSummary();
-    } else {
-      finalScore == 0;
-    }
+    // if (finalScore === 1) {
+    //   showSummaryRuby();
+    //   showSummary();
+    // } else if (finalScore === 2) {
+    //   showSummaryReact();
+    //   showSummary();
+    // } else if (finalScore ===3){
+    //   showSummarySharp();
+    //   showSummary();
+    // } else {
+    //   finalScore == 0;
+    // }
 
     function showSummaryRuby(){
       $("#summary").show();
